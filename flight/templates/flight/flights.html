@@ -5,10 +5,11 @@
     <title>Flights</title>
 </head>
 <body>
-    <h1>Flights{{ flight_id}}</h1>
+    <h1>Flight #{{  flights.id }}</h1>
     <ul>
         <li>Origin : {{ flights.origin}}</li>
-        <li>Destination : {{ flight.destination}}</li>
+        <li>Destination : {{ flights.destination}}</li>
     </ul>
+    <a href="{% url 'index' %}">Back to full Listing</a>
 </body>
 </html>
