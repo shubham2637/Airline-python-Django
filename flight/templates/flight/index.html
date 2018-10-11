@@ -25,7 +25,7 @@
   <ul>
         {% for flight in flights %}
        <li>
-            <a> {{flight}}</a>
+        <a href = '/{{flight.id}}'> {{flight}}</a>
         </li>
         {% endfor %}
     </ul>
